@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<d:BasePage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:d="clr-namespace:XamarinChat;assembly=XamarinChat" 
+	x:Class="XamarinChat.ChatPage"
+	x:TypeArguments="XamarinChat.ChatViewModel">
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical" Padding="5, 20, 5, 0">
+			<Entry Text="{Binding Name}" Placeholder="Name">
+			</Entry>
+			<Entry Text="{Binding Message}" Placeholder="Message">
+			</Entry>
+			<Button Text="Send Message" Command="{Binding SendMessageCommand}"></Button>
+			<ListView x:Name="MessagesList">
+			</ListView>
+		</StackLayout>
+	</ContentPage.Content>
+</d:BasePage>
