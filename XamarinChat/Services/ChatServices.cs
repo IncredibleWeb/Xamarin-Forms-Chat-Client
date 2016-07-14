@@ -16,7 +16,7 @@ namespace XamarinChat
 
 		public ChatServices ()
 		{
-			_connection = new HubConnection ("http://xamarinchat.azurewebsites.net/");
+			_connection = new HubConnection ("http://xamarin-chat.azurewebsites.net/");
 			_proxy = _connection.CreateHubProxy ("ChatHub");
 		}
 
